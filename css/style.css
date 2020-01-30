@@ -594,6 +594,12 @@ header .container {
 	transition: all 0.5s ease;
 }
 
+.projectspage .project-gallery .item .item-img .overlay .technology {
+	margin-bottom: 40px;
+	padding: 10px;
+	
+}
+
 .projectspage .project-gallery .item .item-img .overlay a {
 	display: flex;
 	justify-content: center;
@@ -708,6 +714,11 @@ footer .social a i {
 	/* Project Page */
 	.projectspage {
 		padding: 50px 15px;
+	}
+
+	.projectspage .project-gallery .item .item-img .overlay {
+		height: 100%;
+		top: 0;
 	}
 	/* End Project Page */
 }
@@ -824,8 +835,16 @@ footer .social a i {
 	}
 
 	.resumepage .resume-content .skills li{
-		flex-basis: 50%;
+		flex-basis: 33.33%;
 		margin: 10px 0;
+	}
+	/* End Resume page */
+}
+
+@media screen and (max-width: 550px) {
+	/* Resume page */
+	.resumepage .resume-content .skills li{
+		flex-basis: 50%;
 	}
 	/* End Resume page */
 
