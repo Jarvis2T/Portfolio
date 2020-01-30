@@ -256,8 +256,8 @@ header .container {
 	min-height: calc(100vh - 70px);
 }
 
-.aboutpage .about-info, .aboutpage .about-contact, .aboutpage .about-social {
-	margin: 50px;
+.aboutpage .about-info, .aboutpage .about-contact {
+	margin: 3.125rem;
 }
 
 .aboutpage h3 {
@@ -273,7 +273,6 @@ header .container {
 .aboutpage .about-content {
 	min-height: 550px;
 	display: flex;
-	align-items: center;
 }
 
 .aboutpage .about-content p, .aboutpage .about-contact .email a {
@@ -331,7 +330,7 @@ header .container {
 }
 
 .aboutpage .about-contact .about-social {
-	margin-top: 50px;
+	margin-top: 3.125rem;
 }
 
 .aboutpage .about-social a {
@@ -375,7 +374,7 @@ header .container {
 	font-size: 0.8rem;
 	opacity: 1;
 	width: auto;
-	top: 50px;
+	top: 3.125rem;
 }
 
 
@@ -772,6 +771,12 @@ footer .social a i {
 	}
 	/* End Navigation bar */
 	
+	/* About Page */
+	.aboutpage .about-info, .aboutpage .about-contact {
+		margin: 3.125rem 1.5rem;
+	}
+	/* End About Page */
+
 	/* Resume Page */
 	.resumepage .resume-content .skills li{
 		flex-basis: 25%;
@@ -824,8 +829,8 @@ footer .social a i {
 		align-items: flex-start;
 	}
 
-	.aboutpage .about-info, .aboutpage .about-contact, .aboutpage .about-social {
-		margin: 50px 0;
+	.aboutpage .about-info, .aboutpage .about-contact {
+		margin: 3.125rem 0;
 	}
 	/* End About page */
 	
