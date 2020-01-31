@@ -690,8 +690,8 @@ footer .social a i {
 	font-size: 1.5rem;
 	line-height: 4rem;
 	color: #fff;
-	width: 70%;
-	height: 70%;
+	width: 75%;
+	height: 75%;
 	border: 2px solid #fff;
 	border-radius: 50%;
 	position: relative;
@@ -699,8 +699,8 @@ footer .social a i {
 
 .topButton a i::before {
 	position: absolute;
-	top: -30%;
-	bottom: -30%;
+	top: calc( -20% - 2px );
+	bottom: calc( -20% - 2px );
 	left: 0;
 	right: 0;
 }	
@@ -730,6 +730,13 @@ footer .social a i {
    		width: calc(33.33% - 20px);
 	}
 	/* End Project Page */
+
+	/* End Top button */
+	.topButton a i {
+		width: 74%;
+		height: 74%;
+	}
+	/* End Top button */
 }
 
 @media screen and (max-width: 1067px) {
@@ -900,6 +907,13 @@ footer .social a i {
 		margin: 10px 0;
 	}
 	/* End Resume page */
+
+	/* End Top button */
+	.topButton a i {
+		width: 73%;
+		height: 73%;
+	}
+	/* End Top button */
 }
 
 @media screen and (max-width: 550px) {

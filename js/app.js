@@ -1,9 +1,9 @@
 /* Fixed Header when scroll*/
 window.onscroll = function(){
-	const webScrollTop_tag = document.documentElement.scrollTop;
+	const webScrollTop_tag = document.documentElement.scrollTop || document.body.scrollTop;
 	const topBtn_div = document.querySelector(".topButton");
 	const header_tag = document.querySelector("header");
-
+	console.log(webScrollTop_tag);
 	let index = section_section.length;
 	if (webScrollTop_tag > 100) {
 		topBtn_div.classList.add("slideup");
