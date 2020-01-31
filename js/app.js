@@ -1,13 +1,20 @@
 /* Fixed Header when scroll*/
 window.onscroll = function(){
 	const webScrollTop_tag = document.documentElement.scrollTop;
+	const topBtn_div = document.querySelector(".topButton");
+	const header_tag = document.querySelector("header");
+
 	let index = section_section.length;
-	if (window.innerWidth > 768 ) {
-		if (webScrollTop_tag > 100) {
-			document.querySelector("header").classList.add("fixed");
+	if (webScrollTop_tag > 100) {
+		topBtn_div.classList.add("slideup");
+		if (window.innerWidth > 768) {
+			header_tag.classList.add("fixed");
 		} else {
-			document.querySelector("header").classList.remove("fixed");
+			header_tag.classList.remove("fixed");
 		}
+	} else {
+		header_tag.classList.remove("fixed");
+		topBtn_div.classList.remove("slideup");
 	}
 
 	/*Need to understand*/ /*Add active class on scroll between pages*/
